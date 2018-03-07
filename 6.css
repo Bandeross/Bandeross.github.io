@@ -1,0 +1,160 @@
+.poem {
+    display: flex;
+    align-items: flex-start; /*умолчание*/
+    align-items: center;
+    align-content: stretch; /*умолчание*/
+    justify-content: space-around;
+}
+
+/*.poem div:nth-child(2) {
+    order:1;
+}    */
+.poem div {
+    height: 250px;
+    margin: auto;
+}
+/*-------------------------------------------------------------------*/
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
+
+
+header {
+    position: relative; /* внутренние элементы будут поззиционироваться относительно его */
+    height: 150px;
+    background: #0082c3 ;
+}
+
+.logo {
+    height: 150px;
+    widows: 300px; 
+   }
+nav {
+   position: fixed;
+   left: 10px;
+    width: 200px;
+    height: auto;
+    background:#f4f3f3;
+
+}
+
+.button {
+    
+    background: #fbfbfb;
+    font-size: 16px; 
+    padding: 10px 20px; 
+    color: #393939; /* Цвет текста */
+    border: 1px solid #333; /* Параметры рамки */
+    border-radius: 1px; /* Радиус скругления */
+    
+}
+.button:hover {
+    background: #0082c3; /* Цвет ссылки при наведении на нее курсора мыши */  
+    color: #e6af70;
+}   
+
+.button a {
+    text-decoration:none;
+    
+    
+}
+
+.fixed {
+    position: fixed; 
+    align-self: flex-start;
+}
+.shadow {   /*невидимой блок похожий на NAV*/
+    display: flex;
+     width: 190px;
+     background:transparent;
+     flex-shrink: 0;
+ 
+ }
+.ul_nav {
+    list-style-type: none;
+    text-align: center;
+    text-transform:uppercase;
+}
+main {
+    height: auto;
+    
+    width: 100%;
+    min-width: 250px;
+    margin:0 20px;
+    background:#f4f3f3;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-style: italic;
+    padding-left: 10px;
+     /* overflow: scroll;  Добавляем полосы прокрутки */
+} 
+    
+
+main h3 {
+    color: rgb(0, 130, 195);
+    text-transform:uppercase;
+    font-weight: 700;
+    font-size: 13px;
+    padding-left: 10px;
+    
+}
+
+main h2 {
+    font-weight: 700;
+    text-align: center;
+    padding-top: 10x;
+    font-size: 24px;
+
+}
+aside {
+    width: 200px;
+    height: 269px;
+    background-color:#f4f3f3;
+    border: 1px, black;
+
+}
+footer {
+    height: 100px;
+    background-color:#f4f3f3;
+}
+
+.container {
+    
+    display: flex;
+    margin:auto; 
+    font-size: 12px;
+    background:linear-gradient(to bottom, #f4f3f3,99%, #070707);
+    padding: 10px;
+    font-family: 'Roboto Condensed', sans-serif;
+   
+}
+
+.flexview {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* aside div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}  */
+
+.mail {
+    display: static;
+    position: absolute;
+    bottom: -1000px;
+    left: 50px;
+    width: 60px;
+    
+}
+
+TABLE {
+    background: white; 
+    color: black;
+    border: 2px solid #56433D;
+} 
+
+@media only screen and (max-width:500px) {
+    .container {
+        display: block;
+       
+    }
+}
