@@ -3,9 +3,9 @@ body {
     margin: 0;
     min-width:960px;
     font-family: yandex Sans Text Web,Arial, sans-serif;
-    /*background: #ee0996; /*  тест границ */
     font-weight: 400;
     background: #e6e7e6; 
+     /*background: #ee0996; /*  тест границ */
 }
 
 section figure figcaption footer {  /* не знаю зачем это */
@@ -247,6 +247,49 @@ video {
     background: 0 0 transparent no-repeat;
     background-size: 100% auto;
 }
+/*____________  оплата  _____________ */
+
+.pay {
+    padding: 0 30px;
+    position: relative;
+    box-sizing: border-box;
+    z-index: 0;
+    background: #ecebea;
+}
+
+.pay_container {
+    
+    display: flex;
+    align-items: center;
+    max-width: 1480px;
+    margin: 0 auto;
+    flex-direction: row-reverse;
+    
+}
+
+.pay_content {
+    flex: 1 1 auto;
+
+}
+
+.pay_video-container {
+    flex: 0 0 auto;
+    position: relative;
+    height: 512px;
+}
+.pay_video-wraper {
+    position: relative;
+    z-index: -1;
+}
+.pay_video {
+    width: 512px;
+    height: 512px;
+    display: block;
+    background: 0 0 transparent no-repeat;
+    background-size: 100% auto;
+
+}
+
 /* ____________  подвал  _____________ */
 
 .foot {
