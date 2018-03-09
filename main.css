@@ -1,8 +1,9 @@
 
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
 body {
     margin: 0;
     min-width:960px;
-    font-family: yandex Sans Text Web,Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     background: #e6e7e6; 
      /*background: #ee0996; /*  тест границ */
@@ -184,6 +185,7 @@ video {
     font-weight: 500;
     font-size: 42px;
     line-height: 50px;
+    
 }
 
 .price_description{
@@ -290,6 +292,84 @@ video {
 
 }
 
+
+/* ____________  mobile app  _____________ */
+
+.downloadapp {
+    width: 430px;
+    margin: 0 auto;
+}
+
+.download_header {
+    font-size: 32px;
+    line-height: 40px;
+    margin: 0 0 20px;
+    text-align: center;
+}
+.download_description {
+    font-size: 16px;
+    color: #999;
+    line-height: 25px;
+    text-align: center;
+    margin: 20px 0;
+    padding: 0;
+}
+.download_btn {
+    display: flex;
+    margin-top: 40px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 5px 0 hsla(0,0%,46%,.3);
+    
+}
+.input {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: 50px;
+    font-size: 16px;
+    line-height: 50px;
+    align-items: center;
+}
+
+.input_box {
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    cursor: text;
+    background-color: white;
+}
+.input__control {
+    position: relative;
+    z-index: 3;
+    box-sizing: border-box;
+    vertical-align: top;
+    font-size: 100%;
+    color: #000;
+    border: 0 solid transparent;
+    outline: 0;
+    background: none;
+}
+button {
+    background: gold;
+    text-align: center;
+    max-width: 100%;
+    font-weight: 500;
+    position: relative;
+    z-index: 0;
+    color: #000;
+    border: none;
+    outline: none;
+    letter-spacing: 1px;
+    border-radius: 5px;
+    
+}
+.button_text {
+    margin: 0 25px;
+    white-space: nowrap;
+}
+
+
+
 /* ____________  подвал  _____________ */
 
 .foot {
@@ -339,7 +419,6 @@ video {
 }
 
 .social_title {
-    font-family: /*Yandex Sans Text Web, */ Arial,sans-serif;
     font-size: 20px;
     font-weight: 500;
     line-height: 22px;
