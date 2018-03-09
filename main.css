@@ -185,8 +185,22 @@ video {
     justify-content: space-between;
 }
 
+.foot_footer-cool {
+    flex: 1 1 auto;
+    
+}
+.link {
+    cursor: pointer;
+    transition: color .15s ease-out;
+    text-decoration: none;
+    outline: 0;
+    touch-action: manipulation;
+    color: #999;
+}
+
+/* ------social ----- */
 .social {
-   background: gold /* пустой класс у Яндекса */
+   /* пустой класс у Яндекса */
 }
 
 .social_title {
@@ -219,11 +233,11 @@ video {
 }
 
 .Social__icon_type_fb {
-    background-image: url(data:image/svg+xml;base64,fb.svg);
+    background-image: url(image/fb.svg);
 }
-.Social_theme_normal .Social__icon_type_in {
-    background-image: url(data:image/in.svg);
+.Social__icon_type_in {
+    background-image: url(image/in.svg);
 }
 .Social__icon_type_vk {
-    background-image: url(data:image/vk.svg);
+    background-image: url(image/vk.svg);
 }
