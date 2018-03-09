@@ -18,17 +18,32 @@ video {
 }
 
 /* ____________  header  _____________ */
-header {
-    
+/*header {
+    display: flex;
     background-color: white;
     z-index: 777;
     margin: auto;
     height: 59px;
     box-sizing: border-box;
-   
+} */
+.header {
+position: relative;
+z-index: 10;
+display: table;
+box-sizing: border-box;
+width: 100%;
+height: 59px;
+white-space: nowrap;
+background: white;
 }
-
-
+.header_logo {
+    height: 59px;
+    padding: 0 30px;
+    display: table-cell;
+    vertical-align: middle;
+    white-space: nowrap;
+    box-sizing: border-box;
+}
 
 /* ____________  1 блок  _____________ */
 .intro {
@@ -328,7 +343,7 @@ video {
     height: 50px;
     font-size: 16px;
     line-height: 50px;
-    align-items: center;
+    
 }
 
 .input_box {
@@ -414,9 +429,7 @@ button {
 }
 
 /* ------social ----- */
-.social {
-   /* пустой класс у Яндекса */
-}
+
 
 .social_title {
     font-size: 20px;
@@ -455,3 +468,26 @@ button {
 .Social__icon_type_vk {
     background-image: url(image/vk.svg);
 }
+
+
+@media only screen and (max-width:500px) {
+  
+    body {
+        width: 320px; 
+    }
+    .intro {
+    display: block;
+    width: 200px;
+    height: 200px;
+    
+  }
+  .intro_description {
+    font-size: 20px;
+    line-height: 28px;
+  }
+  .feathurlist{
+    display: flex;
+    overflow-x: auto;
+    padding: 10px 0 25px 20px;
+  }
+    }
