@@ -15,6 +15,7 @@ section figure figcaption footer {  /* не знаю зачем это */
 video {
     vertical-align: baseline;
     object-fit: contain;
+    
 }
 
 /* ____________  header  _____________ */
@@ -44,17 +45,57 @@ background: white;
     white-space: nowrap;
     box-sizing: border-box;
 }
+.header_middle {
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%;
+    
+}
+.header_middle-wrap {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding-right: 15px;
+margin-right: 20px;
+line-height: 59px;
+display: inline-block;
+}
+header a {
+    display: inline-block;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 16px;
+    color: black;
+    }
+    header a:hover {
+        color: red;
+    }
+    a:visited {
+        color: black; /* Цвет посещённой ссылки */
+    } 
+
+
+.header_nav {
+    padding-right: 20px;
+    white-space: nowrap;
+    vertical-align: middle;
+    display: table-cell;
+    text-align: right;
+    padding: 0 22px 0 12px;
+}
+
 
 /* ____________  1 блок  _____________ */
 .intro {
     /* display: block; */
     margin-bottom: 40px;
-    padding: 40px 30px 0;
+    padding: 80px 69px;
     min-height: 600px;
     position: relative;
     z-index: 0;
-    /* height: calc(100vh - 60px); */
+    height: calc(100vh - 60px); 
     box-sizing: border-box; 
+    min-height: 600px;
 }
 
 .intro_content {
@@ -88,7 +129,7 @@ background: white;
 }
 
 .intro_video-container {
-position: relative;
+    position: absolute;
     top: 0;
     right: 0;
     bottom: 0;
@@ -99,6 +140,7 @@ position: relative;
     display: flex;
     align-items: flex-end;
     justify-content: center;
+    flex-direction: column;
 }
 
 .intro_video-wraper {
@@ -109,8 +151,8 @@ position: relative;
 
 .intro_video { 
     position: relative;
-    width: 980px;
-    height: 840px;
+    width: 1130px;
+    height: 968px;
     display: block;
     background: 0 0 transparent no-repeat;
     background-size: 100% auto;
@@ -192,8 +234,8 @@ video {
     background: #fff;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    margin: 0 auto;
+    
 }
 
 .price_header {
@@ -218,6 +260,12 @@ video {
     text-align: left;
     
 }
+.price_art-pay {
+   justify-content:center;
+    max-width: 480px;
+  
+    text-align: left;
+}
 .price_containervideo {
     width: 50%;
     order: 1;
@@ -228,7 +276,7 @@ video {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 512px;
+    height: 735px;
    
 }
 
@@ -264,6 +312,13 @@ video {
     background: 0 0 transparent no-repeat;
     background-size: 100% auto;
 }
+
+a {
+    color: #04b;
+    }
+    a:hover {
+        color: red;
+    }
 /*____________  оплата  _____________ */
 
 .pay {
@@ -281,7 +336,8 @@ video {
     max-width: 1480px;
     margin: 0 auto;
     flex-direction: row-reverse;
-    
+    line-height: 1.2em;
+    justify-content: flex-start;
 }
 
 .pay_content {
@@ -352,18 +408,22 @@ video {
     box-sizing: border-box;
     cursor: text;
     background-color: white;
+    
 }
-.input__control {
+.input_control {
     position: relative;
     z-index: 3;
     box-sizing: border-box;
-    vertical-align: top;
+    vertical-align: centr;
     font-size: 100%;
     color: #000;
     border: 0 solid transparent;
     outline: 0;
     background: none;
+    
 }
+
+
 button {
     background: gold;
     text-align: center;
