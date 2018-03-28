@@ -1,0 +1,28 @@
+
+
+header {
+    background-color: peru;
+    font-size: 30px;
+
+}
+main {
+    background-color: orange;
+    padding: 15px;
+}
+ 
+.list {
+    display: flex;
+    background-color: blue;
+    border: black 10px;
+    justify-content: space-between;
+    padding: 10px 10px;
+    
+    
+}
+
+.gf {
+    font-size: 10 px;
+    background-color: red;
+}
+
+
