@@ -1,0 +1,18 @@
+.qwe{ z-index: 1;
+position: absolute;
+width: 400px;
+height: auto;
+}
+.qwe1{
+    position: absolute;
+    z-index: 0;
+width: 800px;
+height: auto;
+background: gold;
+padding: 10px;
+
+}
+ /* .cont {
+    display: flex;
+    position: statics;
+}  */

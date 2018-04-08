@@ -21,8 +21,12 @@ main {
 }
 
 .gf {
+    
     font-size: 10 px;
     background-color: red;
 }
 
 
+footer {
+    background-color: green;
+}
