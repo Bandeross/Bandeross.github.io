@@ -29,6 +29,7 @@ function find(arr, value) {
         }
 }
 
+
 // // Поиск нажатого чекбокса
 // var CB_checked = document.querySelector('.gf');
 // CB_checked.addEventListener ('checked', function(){
